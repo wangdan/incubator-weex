@@ -3,6 +3,9 @@ buildscript {
         classpath 'com.android.tools.build:gradle:2.3.3'
         classpath 'com.vanniktech:gradle-android-junit-jacoco-plugin:0.5.0'
     }
+    repositories {
+        google()
+    }
 }
 
 plugins {
@@ -204,6 +207,10 @@ dependencies {
     testCompile 'org.robolectric:robolectric:3.3.2'
     testCompile "org.robolectric:shadows-httpclient:3.3.2"
     testCompile 'org.json:json:20160212'
+}
+
+repositories {
+    google()
 }
 
 if(file('../license/LICENSE').exists()){

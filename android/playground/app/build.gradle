@@ -121,6 +121,10 @@ dependencies {
     //compile project(":weex_inspector")
 }
 
+repositories {
+    google()
+}
+
 if(file('../../license/LICENSE').exists()){
     license {
         header = file('../../license/LICENSE')
